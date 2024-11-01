@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../OneDrive - University of Waterloo/1A/MTE 121/Tutorials"
+		},
+		{
+			"path": "../../../../../OneDrive - University of Waterloo/1A/MTE 121/Lessons"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"cmath": "cpp",
+			"iosfwd": "cpp"
+		}
+	}
+}
