@@ -30,7 +30,7 @@ std::tuple<int, int> BattleBotDetection::detectX() {
     // Code to run the detection (similar to your original code)
        if (!camera.capture().isOk()) {
         Serial.println(camera.exception.toString());
-        return std::make_tuple(0,0);
+        return make_tuple(0,0);
     }
 
     // run FOMO
@@ -48,7 +48,7 @@ std::tuple<int, int> BattleBotDetection::detectX() {
 
     // if no object is detected, return
     if (!fomo.foundAnyObject())
-      return std::make_tuple(0,0);
+      return make_tuple(0,0);
 
     // if you expect to find a single object, use fomo.first
     /*
@@ -65,7 +65,7 @@ std::tuple<int, int> BattleBotDetection::detectX() {
     */
     int x = int(fomo.first.x())
     int probability = (int)fomo.first.proba()
-    return std::make_tuple( x,probability );
+    return make_tuple( x,probability );
 }
 
 void BattleBotDetection::printResults() {
